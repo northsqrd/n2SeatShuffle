@@ -2,7 +2,7 @@ local isShuffleDisabled = true
 
 CreateThread(function()
     while true do
-        Wait(0)
+        Wait(250)
         local ped = PlayerPedId()
         local veh = GetVehiclePedIsIn(ped)
         if veh ~= 0 then
@@ -11,8 +11,6 @@ CreateThread(function()
                 SetPedConfigFlag(ped, 184, true)
                 SetPedIntoVehicle(ped, veh, 0)
             end
-        else
-            Wait(500)
         end
     end
 end)

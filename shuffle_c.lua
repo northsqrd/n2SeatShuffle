@@ -33,7 +33,7 @@ local function HandleShuffleCommand()
     end
 end
 
-TriggerEvent('chat:addSuggestion', '/shuff', 'Shuffles to the driver seat if you are the passenger or to the passenger seat if you are driver.')
-TriggerEvent('chat:addSuggestion', '/shuffle', 'Shuffles to the driver seat if you are the passenger or to the passenger seat if you are driver.')
+TriggerEvent('chat:addSuggestion', '/shuff', 'Shuffles to the driver seat if you are the passenger or to the passenger seat if you are the driver.')
+TriggerEvent('chat:addSuggestion', '/shuffle', 'Shuffles to the driver seat if you are the passenger or to the passenger seat if you are the driver.')
 RegisterCommand("shuff", HandleShuffleCommand)
 RegisterCommand("shuffle", HandleShuffleCommand)

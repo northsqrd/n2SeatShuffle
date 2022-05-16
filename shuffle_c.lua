@@ -20,7 +20,6 @@ end)
 local function HandleShuffleCommand()
     local ped = PlayerPedId()
     local veh = GetVehiclePedIsIn(ped)
-
     if veh ~= 0 then
         if GetPedInVehicleSeat(veh, -1) == ped and IsVehicleSeatFree(veh, 0) then
             TaskShuffleToNextVehicleSeat(ped, veh)
